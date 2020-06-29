@@ -1,8 +1,15 @@
 DynArray d;
+Stack s;
 void setup(){
   d = new DynArray();
+  s = new Stack();
 }
 void draw(){
+  println(s.isEmpty());
+  s.push(5);
+  s.push(12);
+  println(s.pop());
+  println(s.top());
   println(d.isEmpty());
   d.append(5);
   d.append(12);
